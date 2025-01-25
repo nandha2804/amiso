@@ -1,9 +1,7 @@
 import React from 'react';
-
-// Import icons with URL
-const icon1 = new URL('../assets/1.png', import.meta.url).href;
-const icon2 = new URL('../assets/2.png', import.meta.url).href;
-const icon3 = new URL('../assets/3.png', import.meta.url).href;
+import icon1 from '../assets/1.png';
+import icon2 from '../assets/2.png';
+import icon3 from '../assets/3.png';
 
 interface FeatureCardProps {
   imgSrc: string;
@@ -18,7 +16,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ imgSrc, title, description })
       alt={title} 
       className="w-28 h-28 mx-auto mb-4 rounded-full border-2 border-gray-300 shadow-lg p-4" 
     />
-    <h1 className="text-2xl font-bold mb-2">{title}</h1>
+    <h3 className="text-lg sm:text-xl font-semibold mb-2">{title}</h3>
     <p className="text-gray-600">{description}</p>
   </div>
 );

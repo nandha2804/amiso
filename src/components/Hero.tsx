@@ -1,9 +1,7 @@
 import React from 'react';
-
-// Import assets with URL
-const icon8 = new URL('../assets/8.png', import.meta.url).href;
-const icon9 = new URL('../assets/9.PNG', import.meta.url).href;
-const icon10 = new URL('../assets/10.PNG', import.meta.url).href;
+import icon8 from '../assets/8.png';
+import icon9 from '../assets/9.PNG';
+import icon10 from '../assets/10.PNG';
 
 interface ServiceCardProps {
   imgSrc: string;

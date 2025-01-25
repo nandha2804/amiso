@@ -1,15 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { TeamMember } from '../types';
-
-// Import team images with URL
-const team1 = new URL('../assets/team1.jpg', import.meta.url).href;
-const team2 = new URL('../assets/team2.PNG', import.meta.url).href;
-const team3 = new URL('../assets/team3.png', import.meta.url).href;
-const team4 = new URL('../assets/team4.PNG', import.meta.url).href;
-const team5 = new URL('../assets/team5.PNG', import.meta.url).href;
-const team6 = new URL('../assets/team6.PNG', import.meta.url).href;
-const team7 = new URL('../assets/team7.PNG', import.meta.url).href;
-const team8 = new URL('../assets/team8.PNG', import.meta.url).href;
+import team1 from '../assets/team1.jpg';
+import team2 from '../assets/team2.PNG';
+import team3 from '../assets/team3.png';
+import team4 from '../assets/team4.PNG';
+import team5 from '../assets/team5.PNG';
+import team6 from '../assets/team6.PNG';
+import team7 from '../assets/team7.PNG';
+import team8 from '../assets/team8.PNG';
 
 const TeamSection: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState(0);

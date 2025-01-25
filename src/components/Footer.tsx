@@ -1,8 +1,6 @@
 import React from 'react';
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
-
-// Import logo with URL
-const logoWide = new URL('../assets/logo-wide.png', import.meta.url).href;
+import logoWide from '../assets/logo-wide.png';
 
 const Footer: React.FC = () => {
   return (

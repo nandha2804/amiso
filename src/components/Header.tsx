@@ -1,9 +1,7 @@
 import React from 'react';
 import { Phone } from 'lucide-react';
 import { FaEnvelope, FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaCalculator } from "react-icons/fa";
-
-// Import logo with URL
-const logoWide = new URL('../assets/logo-wide.png', import.meta.url).href;
+import logoWide from '../assets/logo-wide.png';
 
 const Header: React.FC = () => {
   return (

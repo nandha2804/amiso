@@ -8,9 +8,9 @@ import NeedHelpSection from './components/NeedHelpSection';
 import BlogSection from './components/BlogSection';
 import Footer from './components/Footer';
 
-// Import images with URL
-const team10 = new URL('./assets/team10.PNG', import.meta.url).href;
-const bgImage = new URL('./assets/bg.JPG', import.meta.url).href;
+// Import images directly
+import team10 from './assets/team10.PNG';
+import bgImage from './assets/bg.JPG';
 
 function App() {
   return (

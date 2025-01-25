@@ -1,13 +1,10 @@
-
 import React, { useState, useRef, useEffect } from 'react';
 import { Play } from 'lucide-react';
-
-// Import assets with ?url query
-const icon14 = new URL('../assets/14.PNG', import.meta.url).href;
-const icon15 = new URL('../assets/15.png', import.meta.url).href;
-const icon16 = new URL('../assets/16.png', import.meta.url).href;
-const icon4 = new URL('../assets/4.PNG', import.meta.url).href;
-const demoVideo = new URL('../assets/demo.mp4', import.meta.url).href;
+import icon14 from '../assets/14.PNG';
+import icon15 from '../assets/15.png';
+import icon16 from '../assets/16.png';
+import icon4 from '../assets/4.PNG';
+import demoVideo from '../assets/demo.mp4';
 
 interface StatCardProps {
   imgSrc: string;
