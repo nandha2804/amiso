@@ -4,10 +4,10 @@ import react from '@vitejs/plugin-react';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/amiso/',
   build: {
     outDir: 'dist',
     sourcemap: true,
+    cssCodeSplit: false,
     rollupOptions: {
       output: {
         manualChunks: {
@@ -17,31 +17,13 @@ export default defineConfig({
     }
   },
   assetsInclude: ['**/*.PNG', '**/*.JPG'],
-  publicDir: 'public',
+  css: {
+    postcss: './postcss.config.js',
+    devSourcemap: true
+  },
   resolve: {
     alias: {
       '@': '/src'
     }
-  },
-  server: {
-    port: 3000,
-    strictPort: false,
-    headers: {
-      'Access-Control-Allow-Origin': '*',
-      'Access-Control-Allow-Methods': '*',
-      'Access-Control-Allow-Headers': '*',
-      'Cross-Origin-Embedder-Policy': 'unsafe-none',
-      'Cross-Origin-Opener-Policy': 'unsafe-none',
-      'Cross-Origin-Resource-Policy': 'cross-origin'
-    },
-    cors: {
-      origin: '*',
-      methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-      credentials: true
-    }
-  },
-  preview: {
-    port: 3001,
-    strictPort: false
   }
 });

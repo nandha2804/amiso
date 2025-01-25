@@ -46,14 +46,14 @@ const SaferPlaceSection: React.FC = () => {
     <section className="bg-white py-8 md:py-16">
      <div className="max-w-[1920px] mx-auto px-4 sm:px-8 lg:px-16 2xl:px-24">
        <div className="flex flex-col md:flex-row items-center">
-         <div className="w-full md:w-1/2 lg:w-6/12 relative -mt-8 md:-mt-16 lg:-mt-24">
+         <div className="w-full md:w-1/2 lg:w-6/12 relative mt-[-2rem] md:mt-[-4rem] lg:mt-[-6rem]">
            <img
              src={bg2}
              alt="Cleaning Professional"
              className="w-full h-auto shadow-md relative z-10"
            />
          </div>
-         <div className="w-full md:w-1/2 lg:w-8/12 p-6 md:p-8 lg:p-10 bg-white border-2 border-gray-200 shadow-lg relative mt-4 md:mt-8 lg:mt-12 z-20 md:-ml-12 lg:-ml-16 xl:-ml-24 pr-0 md:pr-2 lg:pr-4">
+         <div className="w-full md:w-1/2 lg:w-8/12 p-6 md:p-8 lg:p-10 bg-white border-2 border-gray-200 shadow-lg relative mt-4 md:mt-8 lg:mt-12 z-20 md:ml-[-3rem] lg:ml-[-4rem] xl:ml-[-6rem] pr-0 md:pr-2 lg:pr-4">
             <div className="mb-8 p-10">
               <p className="text-gray-600 mb-2">MAID FOR YOU.</p>
               <h2 className="text-teal-950 text-2xl md:text-3xl font-bold mb-4">A Cleaner Place is a Safer Place.</h2>
@@ -79,7 +79,10 @@ const SaferPlaceSection: React.FC = () => {
         </div>
 
         {/* Our Great Service Section */}
-        <div style={{ backgroundImage: `url(${bg3})` }} className="bg-no-repeat bg-cover bg-center py-16 md:py-24 lg:py-32 -mt-12 md:-mt-20 lg:-mt-28">
+        <div
+          className="bg-no-repeat bg-cover bg-center py-16 md:py-24 lg:py-32 mt-[-3rem] md:mt-[-5rem] lg:mt-[-7rem]"
+          style={{ backgroundImage: `url(${bg3})` }}
+        >
           <div className="max-w-[1920px] mx-auto px-4 sm:px-8 lg:px-16 2xl:px-24">
             <p className="text-teal-950 font-bold text-center text-sm md:text-base mb-2">WHY CHOOSE US</p>
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-3 md:mb-4">Our Great Service</h2>
